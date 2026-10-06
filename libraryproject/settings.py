@@ -16,8 +16,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR = os.path.join(BASE_DIR, "apps" + os.sep + "templates")
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [( os.path.join(BASE_DIR, "apps/static"))]
-
+STATICFILES_DIRS = [BASE_DIR / "static"]
 
 
 # Quick-start development settings - unsuitable for production
@@ -41,8 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-'apps.bookmodule',
-'apps.usermodule',
+     'apps.bookmodule',
+     'apps.usermodule',
 ]
 
 MIDDLEWARE = [
