@@ -1,0 +1,68 @@
+a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+}
+
+
+.green {
+    background-color: lightgreen;
+    color: red;
+}
+
+
+.gray {
+    background-color: gray;
+    color: gold;
+}
+
+
+#black {
+    background-color: black;
+    color: white;
+}
+
+
+a:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+a:active {
+    background-color: red;
+    color: yellow;
+}
+
+.title{
+    background:#f3f3d5;
+    color:green;
+    padding:15px;
+}
+.internet{
+    background:#5c9ea0;
+    color:white;
+    padding:15px;
+}
+table{
+    border-collapse:collapse;
+    margin:auto;
+}
+
+td,th{
+    border:1px solid black;
+    padding:5px;
+}
+
+h3{
+    text-align:center;
+}
+
+h4{
+    text-align:center;
+}
+.cap1{
+    font-weight: bold;
+}
