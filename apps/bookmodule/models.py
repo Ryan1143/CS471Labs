@@ -1,10 +1,12 @@
 from django.db import models
 
+
 class Book(models.Model):
-    title = models.CharField(max_length=200)
-    author = models.CharField(max_length=100)
-    description = models.TextField()
-    published_date = models.DateField()
-    isbn = models.CharField(max_length=13, unique=True)
+    title = models.CharField(max_length=50)
+    author = models.CharField(max_length=50)
+    price = models.FloatField(default=0.0)
+    edition = models.SmallIntegerField(default=1)
+
+
     def __str__(self):
         return self.title
