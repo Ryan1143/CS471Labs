@@ -1,0 +1,22 @@
+{% extends "bookmodule/layouts/base.html" %}
+
+{% block content %}
+
+<h2>Task 2 Results</h2>
+
+{% for book in books %}
+
+ID: {{ book.id }} <br>
+Title: {{ book.title }} <br>
+Author: {{ book.author }} <br>
+Edition: {{ book.edition }}
+
+<hr>
+
+{% empty %}
+
+No books found.
+
+{% endfor %}
+
+{% endblock content %}

@@ -1,0 +1,41 @@
+{% extends "bookmodule/layouts/base.html" %}
+
+{% block content %}
+
+<h2>Task 5 Results</h2>
+
+<table border="1">
+
+<tr>
+    <th>Information</th>
+    <th>Value</th>
+</tr>
+
+<tr>
+    <td>Total Books</td>
+    <td>{{ total_books }}</td>
+</tr>
+
+<tr>
+    <td>Total Price</td>
+    <td>{{ total_price }}</td>
+</tr>
+
+<tr>
+    <td>Average Price</td>
+    <td>{{ average_price }}</td>
+</tr>
+
+<tr>
+    <td>Maximum Price</td>
+    <td>{{ maximum_price }}</td>
+</tr>
+
+<tr>
+    <td>Minimum Price</td>
+    <td>{{ minimum_price }}</td>
+</tr>
+
+</table>
+
+{% endblock content %}
